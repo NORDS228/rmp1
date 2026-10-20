@@ -1,17 +1,39 @@
-# rmp_practice1
+# Практическая работа №1 — Flutter
 
-A new Flutter project.
+Учебное приложение с макетами по примерам из Figma.
 
-## Getting Started
+## Содержание
 
-This project is a starting point for a Flutter application.
+- Страница 1: Meditate, Welcome.
+- Страница 2: Popular Menu, 3D Design Basic, My E-Wallet, Organizer.
+- Повторяющиеся детали и карточки собраны в отдельные Flutter-виджеты.
 
-A few resources to get you started if this is your first Flutter project:
+## Использованные элементы из лекций
 
-- [Learn Flutter](https://docs.flutter.dev/get-started/learn-flutter)
-- [Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Flutter learning resources](https://docs.flutter.dev/reference/learning-resources)
+`MaterialApp`, `Scaffold`, `Container`, `Padding`, `Center`, `Stack`, `Row`,
+`Column`, `StatelessWidget`. Для просмотра длинной галереи и списков добавлены
+простые прокручиваемые области.
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Запуск
+
+```powershell
+flutter pub get
+flutter run
+```
+
+В Windows-терминале можно указать путь к Flutter SDK напрямую:
+
+```powershell
+C:\flutter\bin\flutter.bat pub get
+C:\flutter\bin\flutter.bat run -d windows
+```
+
+## Проверка
+
+```powershell
+flutter analyze
+flutter test
+```
+
+Отчёт: [Отчет_практическая_работа_1.docx](Отчет_практическая_работа_1.docx).
+В документе оставлены места для скриншотов.
