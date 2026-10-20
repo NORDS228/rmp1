@@ -33,7 +33,3 @@ C:\flutter\bin\flutter.bat run -d windows
 ```powershell
 flutter analyze
 flutter test
-```
-
-Отчёт: [Отчет_практическая_работа_1.docx](Отчет_практическая_работа_1.docx).
-В документе оставлены места для скриншотов.
