@@ -1,35 +1,15 @@
-# Практическая работа №1 — Flutter
+# Flutter UI Practice
 
-Учебное приложение с макетами по примерам из Figma.
+Flutter application with a template catalog and four interface examples:
 
-## Содержание
+- Task Manager
+- Mind Deep Relax
+- My E-Wallet
+- Organizer
 
-- Страница 1: Meditate, Welcome.
-- Страница 2: Popular Menu, 3D Design Basic, My E-Wallet, Organizer.
-- Повторяющиеся детали и карточки собраны в отдельные Flutter-виджеты.
-
-## Использованные элементы из лекций
-
-`MaterialApp`, `Scaffold`, `Container`, `Padding`, `Center`, `Stack`, `Row`,
-`Column`, `StatelessWidget`. Для просмотра длинной галереи и списков добавлены
-простые прокручиваемые области.
-
-## Запуск
+## Run
 
 ```powershell
 flutter pub get
 flutter run
 ```
-
-В Windows-терминале можно указать путь к Flutter SDK напрямую:
-
-```powershell
-C:\flutter\bin\flutter.bat pub get
-C:\flutter\bin\flutter.bat run -d windows
-```
-
-## Проверка
-
-```powershell
-flutter analyze
-flutter test

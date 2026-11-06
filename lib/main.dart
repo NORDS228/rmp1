@@ -1,25 +1,37 @@
 import 'package:flutter/material.dart';
-
-import 'screens/practice_gallery_screen.dart';
+import 'package:flutter/services.dart';
+import 'screens/template_catalog_screen.dart';
 
 void main() {
-  runApp(const PracticeApp());
+  WidgetsFlutterBinding.ensureInitialized();
+  SystemChrome.setSystemUIOverlayStyle(
+    const SystemUiOverlayStyle(
+      statusBarColor: Colors.transparent,
+      statusBarIconBrightness: Brightness.dark,
+    ),
+  );
+  runApp(const FigmaTemplatesApp());
 }
 
-class PracticeApp extends StatelessWidget {
-  const PracticeApp({super.key});
+class FigmaTemplatesApp extends StatelessWidget {
+  const FigmaTemplatesApp({super.key});
 
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      title: 'Figma Templates',
       debugShowCheckedModeBanner: false,
-      title: 'Практическая работа №1',
       theme: ThemeData(
+        fontFamily: 'Plus Jakarta Sans',
+        scaffoldBackgroundColor: Colors.white,
+        colorScheme: ColorScheme.fromSeed(
+          seedColor: const Color(0xFF546BF5),
+          primary: const Color(0xFF546BF5),
+          surface: Colors.white,
+        ),
         useMaterial3: true,
-        colorScheme: ColorScheme.fromSeed(seedColor: const Color(0xFF625BFA)),
-        scaffoldBackgroundColor: const Color(0xFFF5F5F8),
       ),
-      home: const PracticeGalleryScreen(),
+      home: const TemplateCatalogScreen(),
     );
   }
 }

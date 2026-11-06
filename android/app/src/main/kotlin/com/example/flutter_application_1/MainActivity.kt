@@ -1,4 +1,4 @@
-package com.example.rmp_practice1
+package com.example.flutter_application_1
 
 import io.flutter.embedding.android.FlutterActivity
 
